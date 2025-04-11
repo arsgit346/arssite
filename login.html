@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+         <p><div class="logintext">login form(user) DEFAULT</div></p>
+         <input id="inputusername" class="input" value="username">
+        <button class="buttonclass" id="buttoncheck" onclick="checkpassword()">submit</button>
+    </head>
+</html>
+<script>
+    function checkpassword() {
+var password = document.getElementById("inputusername")
+var originpassword = password.value 
+if (originpassword == "user") {
+window.location.href = "home.html"
+}
+    }
+</script>
